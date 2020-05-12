@@ -105,6 +105,9 @@ def main():
     parser.clean()
 
     # Download the darwin.iso tgz file
+    urlpost15 = "http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/11.0.3/12992109/packages/com.vmware.fusion.tools.darwin.zip.tar"
+    urlpre15 = "http://softwareupdate.vmware.com/cds/vmw-desktop/fusion/11.0.3/12992109/packages/com.vmware.fusion.tools.darwinPre15.zip.tar"
+
     print('Retrieving Darwin tools from: ' + urlpost15)
     urlretrieve(urlpost15, convertpath(dest + '/tools/com.vmware.fusion.tools.darwin.zip.tar'))
 
